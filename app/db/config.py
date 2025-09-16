@@ -2,8 +2,9 @@ from sqlalchemy.ext.asyncio import create_async_engine, async_sessionmaker, Asyn
 from fastapi import Depends
 from typing import AsyncGenerator, Annotated
 from decouple import config
+from alembic import context
 
-# Read DB credentials from .env
+config = context.config  
 DB_USER = config("DB_USER")
 DB_PASS = config("DB_PASS")
 DB_NAME = config("DB_NAME")

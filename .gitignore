@@ -1,1 +1,20 @@
 .env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+
+# IDEs
+.vscode/
+.idea/
+
+# Database
+*.sqlite3
+
+# Alembic
+alembic/versions/*.pyc
